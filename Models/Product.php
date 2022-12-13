@@ -18,4 +18,21 @@ class Product
         $this->descrip = $_descript;
         $this->category = $_category;
     }
+    public function getTitle()
+    {
+        return $this->name;
+    }
+    public function getImg()
+    {
+        return $this->img;
+    }
+    public function getDesc()
+    {
+        return $this->descrip;
+    }
+
+    public function getPrezzo()
+    {
+        return $this->price;
+    }
 }
