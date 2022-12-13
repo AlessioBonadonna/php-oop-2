@@ -1,17 +1,19 @@
 <?php
-class Product {
-    public $nome;
-    public $descrizione;
-    public $prezzo;
-    public $img_prodotto;
 
-    function __construct($_nome,$_descrizione,$_prezzo,$_img_prodotto)
+class Product
+{
+    // Attributi
+    public $image;
+    public $title;
+    public $price;
+    public $category;
+
+    // Costruttore
+    public function __construct($image, $title, $price, $category)
     {
-        $this->nome = $_nome;
-        $this->descrizione = $_descrizione;
-        $this->prezzo = $_prezzo;
-        $this->img_prodotto = $_img_prodotto;
-
+        $this->image = $image;
+        $this->title = $title;
+        $this->price = $price;
+        $this->category = $category;
     }
-
 }
