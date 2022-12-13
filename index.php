@@ -1,6 +1,8 @@
 <?php
 include_once __DIR__ . '/Models/Product.php';
-include_once __DIR__ . '/Models/Category.php';
 
-$prodotto1 = new Product("cane", "di", "dio", "ladro");
+$categoriaGatto = new Category('Cane');
+$categoriaCane = new Category('Gatto');
+
+$prodotto1 = new Product("aa", "aa", "aa", "o", $categoriaCane);
 var_dump($prodotto1);

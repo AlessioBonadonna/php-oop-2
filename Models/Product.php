@@ -1,19 +1,21 @@
 <?php
-
+include_once __DIR__ . '/Category.php';
 class Product
 {
-    // Attributi
-    public $image;
-    public $title;
+    // Properties (variables)
+    public $name;
     public $price;
+    public $img;
+    public $descrip;
     public $category;
 
-    // Costruttore
-    public function __construct($image, $title, $price, $category)
+    // Methods (functions)
+    public function __construct($_name, $_price, $_img, $_descript, Category $_category)
     {
-        $this->image = $image;
-        $this->title = $title;
-        $this->price = $price;
-        $this->category = $category;
+        $this->name = $_name;
+        $this->price = $_price;
+        $this->img = $_img;
+        $this->descrip = $_descript;
+        $this->category = $_category;
     }
 }
