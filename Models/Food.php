@@ -12,4 +12,17 @@ class Food extends Product
         $this->peso = $_peso;
         $this->ingredienti = $_ingredienti;
     }
+
+    public function getNomeFood()
+    {
+        return $this->nome_food;
+    }
+    public function getpeso()
+    {
+        return $this->peso;
+    }
+    public function getingredienti()
+    {
+        return $this->ingredienti;
+    }
 }

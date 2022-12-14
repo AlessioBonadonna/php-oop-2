@@ -8,4 +8,8 @@ class Toys extends Product
         parent::__construct($_name, $_price, $_img, $_descript, $_category);
         $this->materiale = $_materiale;
     }
+    public function getMateriale()
+    {
+        return $this->materiale;
+    }
 }
