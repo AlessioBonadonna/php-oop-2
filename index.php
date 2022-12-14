@@ -4,8 +4,8 @@ include_once __DIR__ . '/Models/Food.php';
 include_once __DIR__ . '/Models/Cuccia.php';
 include_once __DIR__ . '/Models/Toys.php';
 
-$categoriaGatto = new Category('gatto', "caticon");
-$categoriaCane = new Category('cane', "dogicon");
+$categoriaGatto = new Category('gatto', "./img/cat.png");
+$categoriaCane = new Category('cane', "./img/icon-dog.png");
 
 $prodotto1 = new Product("prodottouno", 55, "./img/default-img.gif", "lorem lorem lorem bla bla ", $categoriaCane);
 $prodotto2 = new Product("prodottodue", 10, "./img/default-img.gif", "lorem lorem lorem bla bla ", $categoriaGatto);
@@ -39,7 +39,7 @@ $toys1 = new Toys("cuccia", 30, "./img/images.jpeg", "lorem lorem lorem", $categ
     ">
         <div class="card  col-3 m-3 ">
             <h5><?php echo $prodotto1->getTitle() ?></h5>
-            <p><?php echo $prodotto1->category->sgetIcon() ?></p>
+            <img class="w-25" src="<?php echo $prodotto1->category->sgetIcon() ?>" alt="">
             <img src="<?php echo $prodotto1->getImg() ?>" alt="<?php echo $prodotto1->getTitle() ?>"
                 class="card-img-top">
             <div class="card-body">
@@ -52,7 +52,7 @@ $toys1 = new Toys("cuccia", 30, "./img/images.jpeg", "lorem lorem lorem", $categ
 
         <div class="card col-3 m-3">
             <h5><?php echo $cibo1->getTitle() ?></h5>
-            <p><?php echo $cibo1->category->sgetIcon() ?></p>
+            <img class="w-25" src="<?php echo $cibo1->category->sgetIcon() ?>" alt="">
             <img src="<?php echo $cibo1->getImg() ?>" alt="<?php echo $cibo1->getTitle() ?>" class="card-img-top">
             <div class="card-body">
                 <p class="card-text">
@@ -63,7 +63,7 @@ $toys1 = new Toys("cuccia", 30, "./img/images.jpeg", "lorem lorem lorem", $categ
         </div>
         <div class="card col-3 m-3">
             <h5><?php echo $cibo2->getTitle() ?></h5>
-            <p><?php echo $cibo2->category->sgetIcon() ?></p>
+            <img class="w-25" src="<?php echo $cibo2->category->sgetIcon() ?>" alt="">
             <img src="<?php echo $cibo2->getImg() ?>" alt="<?php echo $cibo2->getTitle() ?>" class="card-img-top">
             <div class="card-body">
                 <p class="card-text">
@@ -74,7 +74,7 @@ $toys1 = new Toys("cuccia", 30, "./img/images.jpeg", "lorem lorem lorem", $categ
         </div>
         <div class="card col-3 m-3">
             <h5><?php echo $cuccia1->getTitle() ?></h5>
-            <p><?php echo $cuccia1->category->sgetIcon() ?></p>
+            <img class="w-25" src="<?php echo $cuccia1->category->sgetIcon() ?>" alt="">
             <img src="<?php echo $cuccia1->getImg() ?>" alt="<?php echo $cuccia1
                                                                     ->getTitle() ?>" class="card-img-top">
             <div class="card-body">
@@ -90,7 +90,7 @@ $toys1 = new Toys("cuccia", 30, "./img/images.jpeg", "lorem lorem lorem", $categ
         </div>
         <div class="card col-3 m-3">
             <h5><?php echo $toys1->getTitle() ?></h5>
-            <p><?php echo $toys1->category->sgetIcon() ?></p>
+            <img class="w-25" src="<?php echo $toys1->category->sgetIcon() ?>" alt="">
             <img src="<?php echo $toys1->getImg() ?>" alt="<?php echo $toys1->getTitle() ?>" class="card-img-top">
             <div class="card-body">
                 <p class="card-text">
