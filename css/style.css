@@ -1,0 +1,10 @@
+.icon {
+    width: 50px !important;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.card {
+    position: relative;
+}

@@ -1,6 +1,6 @@
 <?php
 ?>
-<nav class="navbar navbar-light bg-light">
+<nav class="navbar navbar-light bg-success">
     <div class="container">
         <a class="navbar-brand" href="#">
 

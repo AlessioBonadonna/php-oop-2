@@ -41,8 +41,8 @@ $toys1 = new Toys("Paperella", 15, "./img/images.jpeg", "Paperella perfetta per 
 
         <div class="card col-3 m-3">
             <h5><?php echo $cibo1->getTitle() ?></h5>
-            <img class="w-25" src="<?php echo $cibo1->category->sgetIcon() ?>" alt="">
-            <img src="<?php echo $cibo1->getImg() ?>" alt="<?php echo $cibo1->getTitle() ?>" class="card-img-top">
+            <img class="w-25 icon" src="<?php echo $cibo1->category->sgetIcon() ?>" alt="">
+            <img src="<?php echo $cibo1->getImg() ?>" alt="<?php echo $cibo1->getTitle() ?>" class="card-img-top mt-3 ">
             <div class="card-body">
                 <p class="card-text">
                     <?php echo $cibo1->getDesc() . "<br>" . $cibo1->getpeso() . " grammi <br>" . $cibo1->getingredienti()
@@ -59,8 +59,8 @@ $toys1 = new Toys("Paperella", 15, "./img/images.jpeg", "Paperella perfetta per 
 
         <div class="card col-3 m-3">
             <h5><?php echo $cibo2->getTitle() ?></h5>
-            <img class="w-25" src="<?php echo $cibo2->category->sgetIcon() ?>" alt="">
-            <img src="<?php echo $cibo2->getImg() ?>" alt="<?php echo $cibo2->getTitle() ?>" class="card-img-top">
+            <img class="w-25 icon" src="<?php echo $cibo2->category->sgetIcon() ?>" alt="">
+            <img src="<?php echo $cibo2->getImg() ?>" alt="<?php echo $cibo2->getTitle() ?>" class="card-img-top mt-3">
             <div class="card-body">
                 <p class="card-text">
                     <?php echo $cibo2->getDesc() . "<br>" . $cibo2->getpeso() . " grammi <br>" . $cibo2->getingredienti()
@@ -75,8 +75,9 @@ $toys1 = new Toys("Paperella", 15, "./img/images.jpeg", "Paperella perfetta per 
 
         <div class="card col-3 m-3">
             <h5><?php echo $cuccia1->getTitle() ?></h5>
-            <img class="w-25" src="<?php echo $cuccia1->category->sgetIcon() ?>" alt="">
-            <img src="<?php echo $cuccia1->getImg() ?>" alt="<?php echo $cuccia1->getTitle() ?>" class="card-img-top">
+            <img class="w-25 icon" src="<?php echo $cuccia1->category->sgetIcon() ?>" alt="">
+            <img src="<?php echo $cuccia1->getImg() ?>" alt="<?php echo $cuccia1->getTitle() ?>"
+                class="card-img-top mt-3 ">
             <div class="card-body">
                 <p class="card-text">
                     <?php echo $cuccia1
@@ -94,8 +95,8 @@ $toys1 = new Toys("Paperella", 15, "./img/images.jpeg", "Paperella perfetta per 
 
         <div class="card col-3 m-3">
             <h5><?php echo $toys1->getTitle() ?></h5>
-            <img class="w-25" src="<?php echo $toys1->category->sgetIcon() ?>" alt="">
-            <img src="<?php echo $toys1->getImg() ?>" alt="<?php echo $toys1->getTitle() ?>" class="card-img-top">
+            <img class="w-25 icon" src="<?php echo $toys1->category->sgetIcon() ?>" alt="">
+            <img src="<?php echo $toys1->getImg() ?>" alt="<?php echo $toys1->getTitle() ?>" class="card-img-top mt-3 ">
             <div class="card-body">
                 <p class="card-text">
                     <?php echo $toys1->getDesc() . "<br> <br>" . $toys1->getMateriale() ?>
@@ -108,7 +109,9 @@ $toys1 = new Toys("Paperella", 15, "./img/images.jpeg", "Paperella perfetta per 
     </div>
 
     </div>
-
+    <?php
+    include __DIR__ . "/partials/footer.php";
+    ?>
 </body>
 
 </html>
